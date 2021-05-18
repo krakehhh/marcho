@@ -161,7 +161,7 @@
 .top-slider{
   background-image: url(../images/top-slider-bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center center;
   background-color: $bg;
   padding: 65px 0 45px;
   &__container{
@@ -232,6 +232,8 @@
     }
   }
 }
+
+
 
 
 
