@@ -1137,12 +1137,12 @@
   &__title{
     font-size: 22px;
     color: $title;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   &__box{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-bottom: 22px;
   }
   &__price{
     display: flex;
@@ -1165,7 +1165,7 @@
     }
   }
   &__item-text{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     span{
       display: block;
       color: $title;
@@ -1174,10 +1174,13 @@
     }
   }
   &__item-btn{
+    width: 160px;
+    height: 50px;
     @extend %btn;
     border: none;
     text-transform: none;
     margin-left: 15px;
+    cursor: pointer;
   }
 }
 
@@ -1244,6 +1247,9 @@
   &__item{
     margin-bottom: 5px;
     display: flex;
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
   &__title{
     min-width: 100px;
@@ -1270,6 +1276,11 @@
 
 .product-slide{
   display: flex;
+  .slick-vertical .slick-slide{
+    height: 140px;
+    margin-bottom: 30px;
+    border: none;
+}
   &__thumb{
     width: 140px;
     margin-right: 30px;
@@ -1295,7 +1306,69 @@
   }
 }
 
-
+.product-filter{
+  &__color{
+    margin-bottom: 25px;
+    label{
+      margin-right: 10px;
+    }
+  }
+  &__color-input{
+    @extend %radio-hidden;
+    &:checked{
+      & + .product-filter__color-checkbox{
+        border-color: $accent;
+      }
+    }
+  }
+  &__color-checkbox{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border: 1px solid #ccccce;
+    position: relative;
+    display: inline-block;
+    span{
+      position: absolute;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      top: 3px;
+      left: 3px;
+    }
+  }
+  &__color-title,
+  &__size-title{
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: $title;
+    @extend %roboto-400;
+  }
+  &__size{
+    margin-bottom: 35px;
+    label{
+      margin-right: 10px;
+      display: inline-block;
+    }
+  }
+  &__size-input{
+    @extend %radio-hidden;
+    &:checked{
+      & + .product-filter__size-checkbox{
+        border-color: $accent;
+      }
+    }
+  }
+  &__size-checkbox{
+    display: inline-block;
+    cursor: pointer;
+    padding: 7px 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccccce;
+    text-align: center;
+  }
+}
 
 
 
