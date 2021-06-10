@@ -47,6 +47,7 @@ $(function() {
         breakpoint: 1051,
         settings: {
           draggable: true,
+          arrows: true,
         }
       },
     ]

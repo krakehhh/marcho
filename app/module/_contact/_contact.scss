@@ -124,6 +124,7 @@
 
 @media (max-width: 450px){
   .contact{
+    padding-bottom: 70px;
     &__info-title{
       font-size: 28px;
       line-height: 34px;
@@ -139,6 +140,9 @@
         top: 12px;
         left: 16px;
       }
+    }
+    &__form-btn{
+      width: 100%;
     }
   }    
 }

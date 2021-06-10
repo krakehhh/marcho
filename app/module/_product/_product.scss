@@ -185,11 +185,12 @@
       padding: 10px;
     }
   }
+  .star{
+    margin: 0 auto;
+  }
 }
 
-.star{
-  margin: 0 auto;
-}
+
 
 @media (max-width: 1050px){
   .product-item{
@@ -210,7 +211,7 @@
 
 @media (max-width: 620px){
   .product{
-    padding: 60px 0;
+    padding: 70px 0;
     &__items{
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 30px;

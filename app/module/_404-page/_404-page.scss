@@ -42,14 +42,26 @@
     &__img{
       display: none;
     }
+    &__content{
+      margin: 0 auto;
+    }
   }
 }
 
 @media (max-width: 600px){
   .page-404{
+    padding: 70px 0;
     &__title{
       font-size: 40px;
       line-height: 45px;
+    }
+    &__text{
+      margin-bottom: 20px;
+    }
+    &__link{
+      width: 100%;
+      text-align: center;
+      display: inline-block;
     }
   }
 }
