@@ -45,6 +45,12 @@
         fill: $accent;
       }
     }
+    svg{
+      transition: all 0.3s;
+      &:hover{
+        fill: $accent;
+      }
+    }
   }
   &__title{
     color: $title;
